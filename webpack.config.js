@@ -152,8 +152,8 @@ module.exports = {
     }),
     new WebappWebpackPlugin({
       logo: './src/static/favicon.png',
-      prefix: '',
-      publicPath: 'assets/'
+      prefix: 'assets/',
+      publicPath: '.'
     }),
     new CopyPlugin([
       { from: 'src/assets/*', to: 'assets',  flatten: true}
