@@ -118,9 +118,7 @@ module.exports = {
       chunkFilename: "[id].css"
     }),
     new HtmlWebpackPlugin({
-      title: 'Davide Brognoli',
       template: './src/index.handlebars',
-      // templateParameters: require('./data.json'),
       minify: !isDevelopment && {
         html5: true,
         collapseWhitespace: true,
@@ -129,6 +127,28 @@ module.exports = {
         removeEmptyElements: false
       },
 
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/credits.handlebars',
+      filename: 'credits.html',
+      minify: !isDevelopment && {
+        html5: true,
+        collapseWhitespace: true,
+        caseSensitive: true,
+        removeComments: true,
+        removeEmptyElements: false
+      },
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/cookie-policy.handlebars',
+      filename: 'cookie-policy.html',
+      minify: !isDevelopment && {
+        html5: true,
+        collapseWhitespace: true,
+        caseSensitive: true,
+        removeComments: true,
+        removeEmptyElements: false
+      },
     }),
     new WebappWebpackPlugin('./src/static/favicon.png'),
     new CopyPlugin([

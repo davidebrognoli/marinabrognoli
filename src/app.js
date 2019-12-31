@@ -4,8 +4,10 @@ const $ = require('jquery');
 window.jQuery = $;
 const FastClick = require('fastclick');
 const Modernizr = require('modernizr');
+jQuery.migrateMute = true;
 
-require('jquery-migrate');
+require('jquery-migrate/dist/jquery-migrate');
+
 require('jquery-waypoints/waypoints');
 require('jquery.cycle2');
 require('jquery.cycle2.swipe');
@@ -17,7 +19,8 @@ require('jquery.cookie');
 /*global $, ga*/
 
 $(document).ready(function(){
-	"use strict";
+  "use strict";
+  
 
 	// Librerie per tablet
 	FastClick.attach(document.body);
