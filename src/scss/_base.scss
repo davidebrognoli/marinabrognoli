@@ -30,7 +30,7 @@ body{
 }
 
 #menu{
-	background: url('/assets/white-bg.jpg') repeat center center;
+	background: url('assets/white-bg.jpg') repeat center center;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -111,7 +111,7 @@ body{
 	border-bottom: 10px solid #FFF;
 	
 	.header-image{
-		background-image: url('/assets/copertina.jpg');
+		background-image: url('assets/copertina.jpg');
 	}
 
 	#scroll-down{
@@ -122,13 +122,13 @@ body{
 		display: block;
 		width: 87px;
 		height: 86px;
-		background: url('/assets/scroll.png') no-repeat center center;
+		background: url('assets/scroll.png') no-repeat center center;
 	}
 }
 
 #libro-cp{
 	.header-image{
-		background-image: url('/assets/copertina-libro.jpg');
+		background-image: url('assets/copertina-libro.jpg');
 	}
 }
 
@@ -163,15 +163,15 @@ body{
 				padding: 10px 5px;
 
 				&.mail{
-					background: url('/assets/mail.png') no-repeat center center;
+					background: url('assets/mail.png') no-repeat center center;
 				}
 
 				&.facebook{
-					background: url('/assets/facebook.png') no-repeat center center;
+					background: url('assets/facebook.png') no-repeat center center;
 				}
 
 				&.instagram{
-					background: url('/assets/instagram.png') no-repeat center center;
+					background: url('assets/instagram.png') no-repeat center center;
         }
 			}
 		}
@@ -266,20 +266,20 @@ section{
 	}
 
 	.feltrinelli{
-		background-image: url('/assets/lafeltrinelli.jpg');
+		background-image: url('assets/lafeltrinelli.jpg');
 	}
 
 	.ilmiolibro{
-		background-image: url('/assets/ilmiolibro.jpg');
+		background-image: url('assets/ilmiolibro.jpg');
 	}
 
 	.amazon{
-		background-image: url('/assets/amazon.jpg');
+		background-image: url('assets/amazon.jpg');
 	}
 }
 
 #media{
-	background: url('/assets/sfondo-gallery.jpg') no-repeat center center;
+	background: url('assets/sfondo-gallery.jpg') no-repeat center center;
 	background-size: cover;
 
 	h2{
@@ -353,7 +353,7 @@ section{
 		width: 32px;
 		height: 32px;
 		margin-top: -16px;
-		background: url('/assets/prev.png') no-repeat center center;
+		background: url('assets/prev.png') no-repeat center center;
 		z-index: 15;
 	}
 
@@ -365,7 +365,7 @@ section{
 		width: 32px;
 		height: 32px;
 		margin-top: -16px;
-		background: url('/assets/next.png') no-repeat center center;
+		background: url('assets/next.png') no-repeat center center;
 		z-index: 15;
 	}
 }
