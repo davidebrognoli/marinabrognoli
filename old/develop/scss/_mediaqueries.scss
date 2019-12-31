@@ -1,0 +1,65 @@
+@media screen and (max-width: 900px) {
+
+	.column{
+		width: 100%;
+		float: none;
+
+		&:first-child{
+			margin-bottom: 30px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	section{
+		h2{
+			font-size: 40px;
+		}
+
+		p{
+			font-size: 16px;
+		}
+	}
+	#privacy-policy-page{
+		ul{
+			font-size: 16px;
+			word-break: break-all;
+		}
+	}
+
+	.image-section{
+		h1{
+			font-size: 60px;
+		}
+
+		h2{
+			font-size: 40px;
+		}
+	}
+
+	.column{
+		img{
+			max-width: 90%;
+		}
+	}
+
+	#menu {
+		li{
+			a{
+				font-size: 13px;
+			}
+		}
+	}
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.image-section{
+		.header-image{
+			background-attachment: scroll;
+		}
+	}
+
+}

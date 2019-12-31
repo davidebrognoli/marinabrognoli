@@ -1,26 +1,53 @@
 {
   "name": "marinabrognoli",
-  "version": "0.0.1",
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.6.0",
-    "grunt-contrib-uglify": "~0.2.2",
-    "connect-livereload": "~0.2.0",
-    "grunt-open": "~0.2.1",
-    "matchdep": "~0.1.2",
-    "grunt-contrib-connect": "~0.3.0",
-    "grunt-contrib-watch": "~0.5.1",
-    "grunt-contrib-less": "~0.6.4",
-    "grunt-contrib-compass": "~0.4.1",
-    "grunt-contrib-imagemin": "~0.2.1",
-    "grunt-contrib-cssmin": "~0.6.1",
-    "grunt-text-replace": "~0.3.7"
-  },
-  "description": "Sito pubblico di Marina Brognoli",
-  "main": "index.php",
+  "version": "1.0.0",
+  "description": "Marina Brognoli public website",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --config webpack.config.js",
+    "build": "NODE_ENV=production webpack --config webpack.config.js --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidebrognoli/marinabrognoli.git"
   },
   "author": "Davide Brognoli",
-  "license": "BSD"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidebrognoli/marinabrognoli/issues"
+  },
+  "homepage": "https://github.com/davidebrognoli/marinabrognoli#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "handlebars": "^4.0.11",
+    "handlebars-loader": "^1.7.0",
+    "html-webpack-plugin": "^3.0.7",
+    "image-webpack-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^0.2.0",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.1.1",
+    "postcss-normalize": "^4.0.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webapp-webpack-plugin": "^2.5.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-modernizr-loader": "^5.0.0"
+  },
+  "dependencies": {
+    "fastclick": "^1.0.6",
+    "iscroll": "^5.2.0",
+    "jquery": "^3.4.1",
+    "jquery-migrate": "^3.1.0",
+    "jquery-waypoints": "^2.0.5",
+    "jquery.cookie": "^1.4.1",
+    "jquery.cycle2": "^2.1.7",
+    "jquery.cycle2.swipe": "^1.0.0",
+    "modernizr": "^3.8.0",
+    "sioweb-jquery-colorbox": "^1.0.1"
+  }
 }

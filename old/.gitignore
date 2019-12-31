@@ -1,0 +1,6 @@
+node_modules
+.tmp
+.sass-cache
+.ruby-version
+.DS_Store
+.ftpquota
