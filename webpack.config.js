@@ -13,13 +13,13 @@ module.exports = {
     bundle: './src/app.js'
   },
   output: {
-    path: path.resolve(__dirname, '../dist')
+    path: path.resolve(__dirname, './dist')
   },
   devtool: isDevelopment && "source-map",
   devServer: {
     port: 3000,
     open: true,
-    contentBase: path.join(__dirname, "../src"),
+    contentBase: path.join(__dirname, "./src"),
   },
   module: {
     rules: [
