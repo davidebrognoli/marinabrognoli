@@ -25,5 +25,4 @@ git commit -m "VERSION ${version}"
 echo -e  "${BLUE}Pushing commit...${NC}"
 git push origin master
 git subtree push --prefix dist origin gh-pages
-git checkout master
 echo -e  "${GREEN}Version ${version} released${NC}"
