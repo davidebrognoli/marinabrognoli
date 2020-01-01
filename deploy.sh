@@ -13,23 +13,17 @@ then
 fi
 
 version="${1}"
-target_branch="release"
 
 echo -e "${BLUE}Replacing version in package.json...${NC}"
 sed -i.bak "s/\"version\": \".*\",/\"version\": \"${version}\",/" package.json
 rm package.json.bak
-echo -e "${BLUE}Committing package.json...${NC}"
-git add package.json
+echo -e "${BLUE}Creating a new dist${NC}"
+npm run build
+echo -e "${BLUE}Committing the new dist...${NC}"
+git add .
 git commit -m "VERSION ${version}"
 echo -e  "${BLUE}Pushing commit...${NC}"
 git push origin master
-echo -e  "${BLUE}Checking out '${target_branch}' branch...${NC}"
-git checkout ${target_branch}
-echo -e  "${BLUE}Pulling '${target_branch}' branch...${NC}"
-git pull origin ${target_branch}
-echo -e  "${BLUE}Merging 'master' branch into '${target_branch}'...${NC}"
-git merge master -m "Merging from 'master' to release version ${version}"
-echo -e  "${BLUE}Release version ${version} pushing '${target_branch}' branch...${NC}"
-git push origin ${target_branch}
+git subtree push --prefix dist origin gh-pages
 git checkout master
 echo -e  "${GREEN}Version ${version} released${NC}"
